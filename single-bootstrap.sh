@@ -20,4 +20,5 @@ cd ..
 tar -xvzf eventstore-mono-v3.0.0rc2.tar.gz
 cd EventStore-Mono-v3.0.0rc2/
 cp /vagrant/singlenode-config.json singlenode-config.json
-mono-sgen EventStore.SingleNode.exe &
+cp /vagrant/eventstore.conf /etc/init/eventstore.conf
+start eventstore
